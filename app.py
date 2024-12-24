@@ -7,7 +7,7 @@ load_dotenv()
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 
 if not REPLICATE_API_TOKEN:
-    raise ValueError("Token API Replicate tidak ditemukan. Pastikan file .env sudah benar.")
+    raise ValueError("Token API Replicate tidak ditemukan.")
 
 # Set API Token untuk Replicate
 os.environ["REPLICATE_API_TOKEN"] = REPLICATE_API_TOKEN
